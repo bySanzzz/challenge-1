@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    background-color: aqua;
+    border-radius: 20px;
+    
+}
+.text p{
+    padding: 10px;
+    font-size: 11px; text-align: center;
+}
+
+.img-desk{
+    width: 50%;
+}

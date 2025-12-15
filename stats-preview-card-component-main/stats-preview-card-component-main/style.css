@@ -1,8 +1,8 @@
 * {
-  margin: 0; /* Quita márgenes por defecto */
-  padding: 0; /* Quita el padding por defecto */
+  margin: 0; 
+  padding: 0; 
   box-sizing: border-box; 
-  font-family: "Overpass", sans-serif; 
+  
 }
 
 body {
@@ -33,11 +33,15 @@ span {
 #paragraph {
     font-size: medium;
     color: hsla(0, 0%, 100%, 0.75);
-    line-height: 1.7
+    line-height: 1.7;
+    font-size: small;
+    font-family: "Inter", sans-serif
+
 }
 
 .text {
     padding: 60px;
+    margin-right: 10px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     display: flex;    
@@ -54,12 +58,29 @@ span {
 }
 
 
-.img-desk{ 
-    filter: hue-rotate(270deg) saturate(1.2);
-    border-radius: 0 10px 10px 0;
-    filter: hsl(277, 64%, 61%);
-    max-width: 450px;
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 450px;
 }
+
+.img-desk{ 
+    border-radius: 0 10px 10px 0;
+    max-width: 450px;
+    height: 400px;
+}
+
+
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsla(277, 82%, 46%, 0.534);
+  mix-blend-mode: multiply;
+  border-radius: 0 10px 10px 0;
+  pointer-events: none;
+}
+
 .datos {
     display: flex;
     justify-content: space-between;
@@ -71,4 +92,14 @@ span {
     list-style: none;
     color:hsl(0, 0%, 100%);
     font-size: medium;
+    
 }
+
+.datos ul p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 10px;
+    letter-spacing:2PX;
+    margin-top: 5px;
+    font-family:"Lexend Deca", sans-serif;
+}
+

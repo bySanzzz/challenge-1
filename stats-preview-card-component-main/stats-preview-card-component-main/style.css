@@ -13,6 +13,9 @@ body {
     min-height: 100vh
 }
 
+span {
+    color: hsl(277, 64%, 61%)
+}
 
 .card {
     display: flex;
@@ -21,19 +24,16 @@ body {
     width: 1000px;
     margin: auto;
     height: 400px;
-    
-    
-    
-
-    
+    max-width: 900px;
 }
 .card h1 {
     color:hsl(0, 0%, 100%);
 }
 
 #paragraph {
-    font-size: large;
+    font-size: medium;
     color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7
 }
 
 .text {
@@ -42,28 +42,33 @@ body {
     font-weight: 400;
     display: flex;    
     flex-direction: column;
-    gap: 60px;
-  
-
-    
+    gap: 30px;
+    max-width: 450px;
 }
+
+
+
 
 .text p {
     font-size: 15px
 }
 
 
-.img-desk{
-    width: 50%;
+.img-desk{ 
+    filter: hue-rotate(270deg) saturate(1.2);
     border-radius: 0 10px 10px 0;
+    filter: hsl(277, 64%, 61%);
+    max-width: 450px;
 }
 .datos {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
 }   
 
 .datos ul{
     list-style: none;
+    color:hsl(0, 0%, 100%);
+    font-size: medium;
 }
